@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1798,6 +1798,415 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="-4.57" y1="-5.1" x2="-3.05" y2="5.1" layer="51"/>
 <rectangle x1="3.05" y1="-5.1" x2="4.5688" y2="5.1" layer="51"/>
 </package>
+<package name="CTRIM3008">
+<description>&lt;b&gt;Trimm capacitor SMD&lt;/b&gt; STELCO GmbH</description>
+<wire x1="-2.15" y1="1.9" x2="2.15" y2="1.9" width="0.254" layer="21"/>
+<wire x1="2.15" y1="1.9" x2="2.15" y2="0.9" width="0.254" layer="21"/>
+<wire x1="2.15" y1="0.9" x2="2.15" y2="-0.9" width="0.254" layer="51"/>
+<wire x1="2.15" y1="-0.9" x2="2.15" y2="-1.9" width="0.254" layer="21"/>
+<wire x1="2.15" y1="-1.9" x2="-2.15" y2="-1.9" width="0.254" layer="21"/>
+<wire x1="-2.15" y1="-1.9" x2="-2.15" y2="-0.9" width="0.254" layer="21"/>
+<wire x1="-2.15" y1="-0.9" x2="-2.15" y2="0.9" width="0.254" layer="51"/>
+<wire x1="-2.15" y1="0.9" x2="-2.15" y2="1.9" width="0.254" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1016" layer="21" curve="-120.510237"/>
+<wire x1="-1.4" y1="-0.8" x2="1.4" y2="-0.8" width="0.1016" layer="21" curve="120.510237"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1016" layer="51" curve="59.489763"/>
+<wire x1="1.4" y1="-0.8" x2="1.4" y2="0.8" width="0.1016" layer="51" curve="59.489763"/>
+<pad name="+" x="-1.875" y="0" drill="1"/>
+<pad name="-" x="1.875" y="0" drill="1"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.25" y1="-1.25" x2="0.25" y2="1.25" layer="21"/>
+<rectangle x1="-1.25" y1="-0.25" x2="1.25" y2="0.25" layer="21"/>
+<rectangle x1="-2.5" y1="-0.9" x2="-2.25" y2="0.9" layer="51"/>
+<rectangle x1="2.25" y1="-1" x2="2.45" y2="1" layer="51"/>
+<rectangle x1="2.45" y1="-0.5" x2="2.65" y2="0.5" layer="51"/>
+</package>
+<package name="CTRIM3018_11">
+<description>&lt;b&gt;Trimm capacitor SMD&lt;/b&gt; STELCO GmbH</description>
+<wire x1="-2.15" y1="1.9" x2="2.15" y2="1.9" width="0.254" layer="21"/>
+<wire x1="2.15" y1="1.9" x2="2.15" y2="0.9" width="0.254" layer="21"/>
+<wire x1="2.15" y1="0.9" x2="2.15" y2="-0.9" width="0.254" layer="51"/>
+<wire x1="2.15" y1="-0.9" x2="2.15" y2="-1.9" width="0.254" layer="21"/>
+<wire x1="2.15" y1="-1.9" x2="-2.15" y2="-1.9" width="0.254" layer="21"/>
+<wire x1="-2.15" y1="-1.9" x2="-2.15" y2="-0.9" width="0.254" layer="21"/>
+<wire x1="-2.15" y1="-0.9" x2="-2.15" y2="0.9" width="0.254" layer="51"/>
+<wire x1="-2.15" y1="0.9" x2="-2.15" y2="1.9" width="0.254" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1016" layer="21" curve="-120.510237"/>
+<wire x1="-1.4" y1="-0.8" x2="1.4" y2="-0.8" width="0.1016" layer="21" curve="120.510237"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1016" layer="51" curve="59.489763"/>
+<wire x1="1.4" y1="-0.8" x2="1.4" y2="0.8" width="0.1016" layer="51" curve="59.489763"/>
+<smd name="+" x="-2.35" y="0" dx="2.3" dy="1.6" layer="1"/>
+<smd name="-" x="2.35" y="0" dx="2.3" dy="1.6" layer="1"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.25" y1="-1.25" x2="0.25" y2="1.25" layer="21"/>
+<rectangle x1="-1.25" y1="-0.25" x2="1.25" y2="0.25" layer="21"/>
+<rectangle x1="-2.6" y1="-0.6" x2="-2.25" y2="0.6" layer="51"/>
+<rectangle x1="2.25" y1="-0.6" x2="2.6" y2="0.6" layer="51"/>
+</package>
+<package name="CTRIM3018_12">
+<description>&lt;b&gt;Trimm capacitor SMD&lt;/b&gt; STELCO GmbH</description>
+<wire x1="-2.15" y1="1.9" x2="2.15" y2="1.9" width="0.254" layer="21"/>
+<wire x1="2.15" y1="1.9" x2="2.15" y2="0.9" width="0.254" layer="21"/>
+<wire x1="2.15" y1="0.9" x2="2.15" y2="-0.9" width="0.254" layer="51"/>
+<wire x1="2.15" y1="-0.9" x2="2.15" y2="-1.9" width="0.254" layer="21"/>
+<wire x1="2.15" y1="-1.9" x2="-2.15" y2="-1.9" width="0.254" layer="21"/>
+<wire x1="-2.15" y1="-1.9" x2="-2.15" y2="-0.9" width="0.254" layer="21"/>
+<wire x1="-2.15" y1="-0.9" x2="-2.15" y2="0.9" width="0.254" layer="51"/>
+<wire x1="-2.15" y1="0.9" x2="-2.15" y2="1.9" width="0.254" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1016" layer="21" curve="-120.510237"/>
+<wire x1="-1.4" y1="-0.8" x2="1.4" y2="-0.8" width="0.1016" layer="21" curve="120.510237"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1016" layer="51" curve="59.489763"/>
+<wire x1="1.4" y1="-0.8" x2="1.4" y2="0.8" width="0.1016" layer="51" curve="59.489763"/>
+<smd name="+" x="-3" y="0" dx="2" dy="1.6" layer="1"/>
+<smd name="-" x="3" y="0" dx="2" dy="1.6" layer="1"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.25" y1="-1.25" x2="0.25" y2="1.25" layer="21"/>
+<rectangle x1="-1.25" y1="-0.25" x2="1.25" y2="0.25" layer="21"/>
+<rectangle x1="-3.5" y1="-0.6" x2="-2.25" y2="0.6" layer="51"/>
+<rectangle x1="2.25" y1="-0.6" x2="3.5" y2="0.6" layer="51"/>
+</package>
+<package name="CTRIM3040.427">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
+ 7 S-Triko 160 V DC for PCB mounting &lt;p&gt;
+ Adjustable from one side, vertical to PCB</description>
+<wire x1="0.3" y1="1.5" x2="-0.7" y2="-1.35" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-1.5" x2="0.7" y2="1.35" width="0.1524" layer="21"/>
+<wire x1="-3.3" y1="1.2" x2="3.3" y2="1.2" width="0.254" layer="21" curve="-140.033787"/>
+<wire x1="-3.3" y1="-1.2" x2="3.3" y2="-1.2" width="0.254" layer="21" curve="140.033787"/>
+<wire x1="-3.3" y1="1.2" x2="-3.3" y2="-1.2" width="0.254" layer="51" curve="39.966213"/>
+<wire x1="3.3" y1="-1.2" x2="3.3" y2="1.2" width="0.254" layer="51" curve="39.966213"/>
+<circle x="0" y="0" radius="1.6" width="0.1524" layer="21"/>
+<pad name="1A" x="-3.5" y="0" drill="1.3"/>
+<pad name="2" x="0" y="-3.5" drill="1.3"/>
+<pad name="1B" x="3.5" y="0" drill="1.3"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.9" y1="-0.6" x2="-3.5" y2="0.6" layer="51"/>
+<rectangle x1="3.5" y1="-0.6" x2="3.9" y2="0.6" layer="51"/>
+<rectangle x1="-0.6" y1="-3.9" x2="0.6" y2="-3.5" layer="51"/>
+</package>
+<package name="CTRIM3040.428">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
+ 7 S-Triko 160 V DC for PCB mounting &lt;p&gt;
+ Adjustable from both sides, vertical to PCB</description>
+<wire x1="0.3" y1="1.5" x2="-0.7" y2="-1.3" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-1.5" x2="0.7" y2="1.3" width="0.1524" layer="21"/>
+<wire x1="-3.3" y1="1.2" x2="3.3" y2="1.2" width="0.254" layer="21" curve="-140.033787"/>
+<wire x1="-3.3" y1="-1.2" x2="3.3" y2="-1.2" width="0.254" layer="21" curve="140.033787"/>
+<wire x1="-3.3" y1="1.2" x2="-3.3" y2="-1.2" width="0.254" layer="51" curve="39.966213"/>
+<wire x1="3.3" y1="-1.2" x2="3.3" y2="1.2" width="0.254" layer="51" curve="39.966213"/>
+<circle x="0" y="0" radius="1.6" width="0.1524" layer="21"/>
+<pad name="1A" x="-3.5" y="0" drill="1.3"/>
+<pad name="2" x="0" y="-3.5" drill="1.3"/>
+<pad name="1B" x="3.5" y="0" drill="1.3"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.9" y1="-0.6" x2="-3.5" y2="0.6" layer="51"/>
+<rectangle x1="3.5" y1="-0.6" x2="3.9" y2="0.6" layer="51"/>
+<rectangle x1="-0.6" y1="-3.9" x2="0.6" y2="-3.5" layer="51"/>
+<hole x="0" y="0" drill="4.5"/>
+</package>
+<package name="CTRIM3040.448">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
+ 7 S-Triko 160 V DC for PCB mounting &lt;p&gt;
+ Adjustable from one side, parallel to PCB</description>
+<wire x1="-3.75" y1="2.91" x2="3.75" y2="2.91" width="0.254" layer="51"/>
+<wire x1="3.75" y1="2.91" x2="3.75" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="3.75" y1="-2.54" x2="-3.75" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="-3.75" y1="-2.54" x2="-3.75" y2="2.91" width="0.254" layer="21"/>
+<wire x1="-1.5" y1="-2.64" x2="-1.5" y2="-3.64" width="0.254" layer="21"/>
+<wire x1="-1.5" y1="-3.64" x2="-0.45" y2="-3.64" width="0.254" layer="21"/>
+<wire x1="0.45" y1="-3.64" x2="1.5" y2="-3.64" width="0.254" layer="21"/>
+<wire x1="1.5" y1="-3.64" x2="1.5" y2="-2.64" width="0.254" layer="21"/>
+<wire x1="-0.45" y1="-3.64" x2="-0.45" y2="-3.14" width="0.254" layer="21"/>
+<wire x1="-0.45" y1="-3.14" x2="0.45" y2="-3.14" width="0.254" layer="21"/>
+<wire x1="0.45" y1="-3.14" x2="0.45" y2="-3.64" width="0.254" layer="21"/>
+<wire x1="-1.55" y1="2.91" x2="1.5" y2="2.91" width="0.254" layer="21"/>
+<pad name="1A" x="-2.5" y="3.81" drill="1.3"/>
+<pad name="1B" x="2.5" y="3.81" drill="1.3"/>
+<pad name="2" x="0" y="1.31" drill="1.3"/>
+<text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.8" y1="3.01" x2="-2.2" y2="4.56" layer="51"/>
+<rectangle x1="2.2" y1="3.01" x2="2.8" y2="4.56" layer="51"/>
+</package>
+<package name="CTRIM3040.450">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
+ 7 S-Triko 160 V DC for PCB mounting &lt;p&gt;
+ Adjustable from both sides, parallel to PCB</description>
+<wire x1="-3.75" y1="2.91" x2="3.75" y2="2.91" width="0.254" layer="51"/>
+<wire x1="3.75" y1="2.91" x2="3.75" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="3.75" y1="-2.54" x2="-3.75" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="-3.75" y1="-2.54" x2="-3.75" y2="2.91" width="0.254" layer="21"/>
+<wire x1="-1.5" y1="-2.64" x2="-1.5" y2="-3.64" width="0.254" layer="21"/>
+<wire x1="-1.5" y1="-3.64" x2="-0.45" y2="-3.64" width="0.254" layer="21"/>
+<wire x1="0.45" y1="-3.64" x2="1.5" y2="-3.64" width="0.254" layer="21"/>
+<wire x1="1.5" y1="-3.64" x2="1.5" y2="-2.64" width="0.254" layer="21"/>
+<wire x1="-0.45" y1="-3.64" x2="-0.45" y2="-3.14" width="0.254" layer="21"/>
+<wire x1="-0.45" y1="-3.14" x2="0.45" y2="-3.14" width="0.254" layer="21"/>
+<wire x1="0.45" y1="-3.14" x2="0.45" y2="-3.64" width="0.254" layer="21"/>
+<wire x1="-1.55" y1="2.91" x2="1.5" y2="2.91" width="0.254" layer="21"/>
+<pad name="1A" x="-2.5" y="3.81" drill="1.3"/>
+<pad name="1B" x="2.5" y="3.81" drill="1.3"/>
+<pad name="2" x="0" y="1.31" drill="1.3"/>
+<text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.8" y1="3.01" x2="-2.2" y2="4.56" layer="51"/>
+<rectangle x1="2.2" y1="3.01" x2="2.8" y2="4.56" layer="51"/>
+</package>
+<package name="CTRIM3040.452">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
+ 7 S-Triko 160 V DC for PCB mounting &lt;p&gt;
+ Adjustable from one side for automatic adjustment, vertical to PCB</description>
+<wire x1="-3.3" y1="1.2" x2="3.3" y2="1.2" width="0.254" layer="21" curve="-140.033787"/>
+<wire x1="-3.3" y1="-1.2" x2="3.3" y2="-1.2" width="0.254" layer="21" curve="140.033787"/>
+<wire x1="-3.3" y1="1.2" x2="-3.3" y2="-1.2" width="0.254" layer="51" curve="39.966213"/>
+<wire x1="3.3" y1="-1.2" x2="3.3" y2="1.2" width="0.254" layer="51" curve="39.966213"/>
+<wire x1="-0.85" y1="1.5" x2="-1.7" y2="0" width="0.1016" layer="21"/>
+<wire x1="-1.7" y1="0" x2="-0.85" y2="-1.5" width="0.1016" layer="21"/>
+<wire x1="-0.85" y1="-1.5" x2="0.85" y2="-1.5" width="0.1016" layer="21"/>
+<wire x1="0.85" y1="-1.5" x2="1.7" y2="0" width="0.1016" layer="21"/>
+<wire x1="1.7" y1="0" x2="0.85" y2="1.5" width="0.1016" layer="21"/>
+<wire x1="-0.85" y1="1.5" x2="0.85" y2="1.5" width="0.1016" layer="21"/>
+<wire x1="-1.35" y1="0.45" x2="1.05" y2="-1" width="0.1016" layer="21"/>
+<wire x1="-1.05" y1="0.95" x2="1.35" y2="-0.5" width="0.1016" layer="21"/>
+<circle x="0" y="0" radius="1.5" width="0.1016" layer="21"/>
+<circle x="0" y="0" radius="1.4508" width="0.1016" layer="21"/>
+<pad name="1A" x="-3.5" y="0" drill="1.3"/>
+<pad name="2" x="0" y="-3.5" drill="1.3"/>
+<pad name="1B" x="3.5" y="0" drill="1.3"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.9" y1="-0.6" x2="-3.5" y2="0.6" layer="51"/>
+<rectangle x1="3.5" y1="-0.6" x2="3.9" y2="0.6" layer="51"/>
+<rectangle x1="-0.6" y1="-3.9" x2="0.6" y2="-3.5" layer="51"/>
+</package>
+<package name="CTRIM3050.504">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
+ 5 S-Triko 160 V DC for PCB mounting,&lt;p&gt;
+ Adjustable from one side, vertical to PCB</description>
+<wire x1="-0.7" y1="0.4" x2="0.6" y2="-0.9" width="0.1524" layer="21"/>
+<wire x1="-0.2" y1="0.9" x2="1.1" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="-2.4" y1="1" x2="2.8" y2="1" width="0.254" layer="21" curve="-137.924978"/>
+<wire x1="-2.4" y1="-1" x2="2.8" y2="-1" width="0.254" layer="21" curve="137.924978"/>
+<wire x1="-2.4" y1="1" x2="-2.4" y2="-1" width="0.254" layer="51" curve="42.075022"/>
+<wire x1="2.8" y1="-1" x2="2.8" y2="1" width="0.254" layer="51" curve="42.075022"/>
+<circle x="0.2" y="0" radius="1" width="0.1524" layer="21"/>
+<pad name="1" x="-2.5" y="0" drill="1.1"/>
+<pad name="2" x="2.5" y="0" drill="1.1"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="CTRIM3050.505">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
+ 5 S-Triko 160 V DC for PCB mounting,&lt;p&gt;
+ Adjustable from both sides, vertical to PCB</description>
+<wire x1="-0.7" y1="0.4" x2="0.6" y2="-0.9" width="0.1524" layer="21"/>
+<wire x1="-0.2" y1="0.9" x2="1.1" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="-2.4" y1="1" x2="2.8" y2="1" width="0.254" layer="21" curve="-137.924978"/>
+<wire x1="-2.4" y1="-1" x2="2.8" y2="-1" width="0.254" layer="21" curve="137.924978"/>
+<wire x1="-2.4" y1="1" x2="-2.4" y2="-1" width="0.254" layer="51" curve="42.075022"/>
+<wire x1="2.8" y1="-1" x2="2.8" y2="1" width="0.254" layer="51" curve="42.075022"/>
+<circle x="0.2" y="0" radius="1" width="0.1524" layer="21"/>
+<pad name="1" x="-2.5" y="0" drill="1.1"/>
+<pad name="2" x="2.5" y="0" drill="1.1"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="0.2" y="0" drill="2.5"/>
+</package>
+<package name="CTRIM3050.506">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; STELCO GmbH&lt;p&gt;
+ 5 S-Triko 160 V DC for PCB mounting,&lt;p&gt;
+ Adjustable from one side, parallel to PCB</description>
+<wire x1="-2.4" y1="0.22" x2="-2.4" y2="-1.63" width="0.254" layer="21"/>
+<wire x1="-1.2" y1="-2.63" x2="-1.2" y2="-1.63" width="0.254" layer="21"/>
+<wire x1="-1.2" y1="-1.63" x2="1.2" y2="-1.63" width="0.254" layer="21"/>
+<wire x1="1.2" y1="-1.63" x2="1.2" y2="-2.63" width="0.254" layer="21"/>
+<wire x1="2.4" y1="-1.63" x2="2.4" y2="0.22" width="0.254" layer="21"/>
+<wire x1="2.4" y1="1.67" x2="-2.4" y2="1.67" width="0.254" layer="51"/>
+<wire x1="-1.2" y1="-2.63" x2="-0.4" y2="-2.63" width="0.254" layer="21"/>
+<wire x1="-0.4" y1="-2.63" x2="-0.4" y2="-2.13" width="0.254" layer="21"/>
+<wire x1="-0.4" y1="-2.13" x2="0.4" y2="-2.13" width="0.254" layer="21"/>
+<wire x1="0.4" y1="-2.13" x2="0.4" y2="-2.63" width="0.254" layer="21"/>
+<wire x1="0.4" y1="-2.63" x2="1.2" y2="-2.63" width="0.254" layer="21"/>
+<wire x1="-1.2" y1="-1.63" x2="-2.4" y2="-1.63" width="0.254" layer="21"/>
+<wire x1="1.2" y1="-1.63" x2="2.4" y2="-1.63" width="0.254" layer="21"/>
+<wire x1="-2.4" y1="0.22" x2="-2.4" y2="1.67" width="0.254" layer="51"/>
+<wire x1="2.4" y1="0.22" x2="2.4" y2="1.67" width="0.254" layer="51"/>
+<wire x1="-1.45" y1="1.67" x2="1.45" y2="1.67" width="0.254" layer="21"/>
+<pad name="1A" x="-2.5" y="1.27" drill="1.1"/>
+<pad name="1B" x="2.5" y="1.27" drill="1.1"/>
+<pad name="2" x="0" y="-0.23" drill="1.1"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="CTRIMCTZ2">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; AVX</description>
+<wire x1="-1.15" y1="-1.4" x2="-1.15" y2="0.45" width="0.254" layer="51"/>
+<wire x1="-1.15" y1="0.45" x2="-0.45" y2="1.35" width="0.254" layer="51"/>
+<wire x1="-0.45" y1="1.35" x2="0.45" y2="1.35" width="0.254" layer="51"/>
+<wire x1="0.45" y1="1.35" x2="1.15" y2="0.4" width="0.254" layer="51"/>
+<wire x1="1.15" y1="0.4" x2="1.15" y2="-1.4" width="0.254" layer="51"/>
+<wire x1="1.15" y1="-1.4" x2="-1.15" y2="-1.4" width="0.254" layer="51"/>
+<wire x1="-0.5" y1="-1.4" x2="-1.15" y2="-1.4" width="0.254" layer="21"/>
+<wire x1="-1.15" y1="-1.4" x2="-1.15" y2="0.45" width="0.254" layer="21"/>
+<wire x1="-1.15" y1="0.45" x2="-0.45" y2="1.35" width="0.254" layer="21"/>
+<wire x1="0.5" y1="-1.4" x2="1.15" y2="-1.4" width="0.254" layer="21"/>
+<wire x1="1.15" y1="-1.4" x2="1.15" y2="0.4" width="0.254" layer="21"/>
+<wire x1="1.15" y1="0.4" x2="0.45" y2="1.35" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="0.75" width="0.1524" layer="21"/>
+<smd name="1" x="0" y="1.25" dx="0.5" dy="0.45" layer="1"/>
+<smd name="2" x="0" y="-1.25" dx="0.55" dy="0.5" layer="1"/>
+<text x="-1.4" y="-1.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.7" y="-1.5" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.15" y1="-0.55" x2="0.15" y2="0.55" layer="21"/>
+<rectangle x1="-0.55" y1="-0.15" x2="0.55" y2="0.15" layer="21"/>
+</package>
+<package name="CTRIMCTZ3">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; AVX</description>
+<wire x1="-1.45" y1="-2.15" x2="-1.45" y2="0.75" width="0.254" layer="51"/>
+<wire x1="-1.45" y1="0.75" x2="-0.45" y2="2.1" width="0.254" layer="51"/>
+<wire x1="-0.45" y1="2.1" x2="0.45" y2="2.1" width="0.254" layer="51"/>
+<wire x1="0.45" y1="2.1" x2="1.45" y2="0.75" width="0.254" layer="51"/>
+<wire x1="1.45" y1="0.75" x2="1.45" y2="-2.15" width="0.254" layer="51"/>
+<wire x1="1.45" y1="-2.15" x2="-1.45" y2="-2.15" width="0.254" layer="51"/>
+<wire x1="-0.6" y1="-2.15" x2="-1.45" y2="-2.15" width="0.254" layer="21"/>
+<wire x1="-1.45" y1="-2.15" x2="-1.45" y2="0.75" width="0.254" layer="21"/>
+<wire x1="-1.45" y1="0.75" x2="-0.45" y2="2.1" width="0.254" layer="21"/>
+<wire x1="0.6" y1="-2.15" x2="1.45" y2="-2.15" width="0.254" layer="21"/>
+<wire x1="1.45" y1="-2.15" x2="1.45" y2="0.75" width="0.254" layer="21"/>
+<wire x1="1.45" y1="0.75" x2="0.45" y2="2.1" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="1.1" width="0.1524" layer="21"/>
+<smd name="1" x="0" y="1.95" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-1.95" dx="0.78" dy="0.6" layer="1"/>
+<text x="-1.85" y="-2.3" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.1" y="-2.3" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.25" y1="-0.85" x2="0.25" y2="0.85" layer="21"/>
+<rectangle x1="-0.85" y1="-0.25" x2="0.85" y2="0.25" layer="21"/>
+</package>
+<package name="CTRIMTZBX4">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; muRata</description>
+<wire x1="-1.9" y1="2.15" x2="-1.9" y2="-2.15" width="0.254" layer="51"/>
+<wire x1="-1.9" y1="-2.15" x2="1.9" y2="-2.15" width="0.254" layer="51"/>
+<wire x1="1.9" y1="-2.15" x2="1.9" y2="2.15" width="0.254" layer="51"/>
+<wire x1="1.9" y1="2.15" x2="-1.9" y2="2.15" width="0.254" layer="51"/>
+<wire x1="-1.05" y1="-2.15" x2="-1.9" y2="-2.15" width="0.254" layer="21"/>
+<wire x1="-1.9" y1="-2.15" x2="-1.9" y2="2.15" width="0.254" layer="21"/>
+<wire x1="-1.9" y1="2.15" x2="-1.05" y2="2.15" width="0.254" layer="21"/>
+<wire x1="1.05" y1="-2.15" x2="1.9" y2="-2.15" width="0.254" layer="21"/>
+<wire x1="1.9" y1="-2.15" x2="1.9" y2="2.15" width="0.254" layer="21"/>
+<wire x1="1.9" y1="2.15" x2="1.05" y2="2.15" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="1.5" width="0.1524" layer="51"/>
+<smd name="1" x="0" y="1.8" dx="1.6" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.8" dx="1.6" dy="1.2" layer="1"/>
+<text x="-2.3" y="-2.25" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.55" y="-2.25" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.25" y1="-1.2" x2="0.25" y2="1.2" layer="51"/>
+<rectangle x1="-1.2" y1="-0.25" x2="1.2" y2="0.25" layer="51"/>
+</package>
+<package name="CTRIMCV05">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; BC-Components</description>
+<wire x1="-2.8" y1="0" x2="2.8" y2="0" width="0.254" layer="51" curve="-180"/>
+<wire x1="-2.8" y1="0" x2="-1.05" y2="2.6" width="0.254" layer="21" curve="-68.064256"/>
+<wire x1="1.05" y1="2.6" x2="2.8" y2="0" width="0.254" layer="21" curve="-68.064256"/>
+<wire x1="-2.8" y1="0" x2="-2.8" y2="-2.9" width="0.254" layer="21"/>
+<wire x1="-2.8" y1="-2.9" x2="-1.1" y2="-2.9" width="0.254" layer="21"/>
+<wire x1="-1.1" y1="-2.9" x2="1.15" y2="-2.9" width="0.254" layer="51"/>
+<wire x1="1.15" y1="-2.9" x2="2.8" y2="-2.9" width="0.254" layer="21"/>
+<wire x1="2.8" y1="-2.9" x2="2.8" y2="0" width="0.254" layer="21"/>
+<wire x1="-1.95" y1="-1.15" x2="-1.95" y2="1.15" width="0.1524" layer="51"/>
+<wire x1="-1.95" y1="1.15" x2="0" y2="2.25" width="0.1524" layer="51"/>
+<wire x1="0" y1="2.25" x2="1.95" y2="1.15" width="0.1524" layer="51"/>
+<wire x1="1.95" y1="1.15" x2="1.95" y2="-1.1" width="0.1524" layer="51"/>
+<wire x1="1.95" y1="-1.1" x2="0" y2="-2.25" width="0.1524" layer="51"/>
+<wire x1="0" y1="-2.25" x2="-1.95" y2="-1.15" width="0.1524" layer="51"/>
+<wire x1="-1.95" y1="-1.15" x2="-1.95" y2="1.15" width="0.1524" layer="21"/>
+<wire x1="-1.95" y1="1.15" x2="-0.7" y2="1.85" width="0.1524" layer="21"/>
+<wire x1="0.7" y1="1.85" x2="1.95" y2="1.15" width="0.1524" layer="21"/>
+<wire x1="1.95" y1="1.15" x2="1.95" y2="-1.1" width="0.1524" layer="21"/>
+<wire x1="-1.95" y1="-1.15" x2="-0.7" y2="-1.85" width="0.1524" layer="21"/>
+<wire x1="0.7" y1="-1.85" x2="1.95" y2="-1.1" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="2.5" drill="1"/>
+<pad name="2" x="0" y="-2.5" drill="1"/>
+<text x="-3.3" y="-3.05" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.5" y="-3.05" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.9" y1="-0.5" x2="1.95" y2="0.5" layer="21"/>
+</package>
+<package name="CTRIMTZ03">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt; muRata</description>
+<wire x1="1.45" y1="-2.5" x2="-1.45" y2="-2.5" width="0.254" layer="51"/>
+<wire x1="-1.45" y1="-2.5" x2="-1.05" y2="2.7" width="0.254" layer="21" curve="-128.646369"/>
+<wire x1="1.05" y1="2.7" x2="1.45" y2="-2.5" width="0.254" layer="21" curve="-128.646369"/>
+<wire x1="-1.05" y1="2.7" x2="1.05" y2="2.7" width="0.254" layer="51" curve="-42.501011"/>
+<circle x="0" y="0" radius="1.6" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="2.5" drill="1"/>
+<pad name="2" x="0" y="-2.5" drill="1"/>
+<text x="-3.3" y="-2.6" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.6" y="-2.6" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.35" y1="-1.2" x2="0.35" y2="1.2" layer="21"/>
+<rectangle x1="-1.2" y1="-0.35" x2="1.2" y2="0.35" layer="21"/>
+</package>
+<package name="CTRIM808-BC">
+<description>&lt;b&gt;Trimm capacitor &lt;/b&gt; BC-Components</description>
+<wire x1="-3.4036" y1="1.016" x2="-1.016" y2="3.4036" width="0.254" layer="21" curve="-56.758486"/>
+<wire x1="1.016" y1="3.4036" x2="3.4036" y2="1.016" width="0.254" layer="21" curve="-56.758486"/>
+<wire x1="-3.4036" y1="-1.016" x2="3.4036" y2="-1.016" width="0.254" layer="21" curve="146.758486"/>
+<circle x="0" y="0" radius="3.556" width="0.254" layer="51"/>
+<circle x="0" y="0" radius="1.271" width="0.1524" layer="21"/>
+<pad name="2" x="0" y="3.6068" drill="1.3"/>
+<pad name="1" x="-3.6068" y="0" drill="1.3"/>
+<pad name="3" x="3.6068" y="0" drill="1.3"/>
+<text x="-4.4684" y="-3.4056" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.77" y="-3.4056" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.2192" y1="-0.3048" x2="1.2192" y2="0.3048" layer="21"/>
+</package>
+<package name="CTRIM808-1">
+<description>&lt;b&gt;Trimm capacitor &lt;/b&gt; STELCO GmbH&lt;p&gt;
+diameter 8.6 mm, grid 3.55 mm</description>
+<wire x1="-3.4925" y1="1.5227" x2="3.4925" y2="1.5227" width="0.1524" layer="21" curve="-132.886424"/>
+<wire x1="-1.5227" y1="-3.4925" x2="1.5227" y2="-3.4925" width="0.1524" layer="51" curve="47.113576"/>
+<wire x1="-3.4925" y1="1.5227" x2="-3.4925" y2="-1.5227" width="0.1524" layer="51" curve="47.113576"/>
+<wire x1="-3.4925" y1="-1.5227" x2="-1.5227" y2="-3.4925" width="0.1524" layer="21" curve="42.886424"/>
+<wire x1="0.889" y1="-4.191" x2="-0.889" y2="-4.191" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="-3.705" x2="-0.889" y2="-4.191" width="0.1524" layer="51"/>
+<wire x1="0.889" y1="-3.705" x2="0.889" y2="-4.191" width="0.1524" layer="51"/>
+<wire x1="-1.2443" y1="-0.254" x2="1.2443" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-1.2443" y1="0.254" x2="1.2443" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="-4.191" y1="0.889" x2="-4.191" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-4.191" y1="0.889" x2="-3.705" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-4.191" y1="-0.889" x2="-3.705" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="3.4925" y1="-1.5227" x2="3.4925" y2="1.5227" width="0.1524" layer="51" curve="47.113576"/>
+<wire x1="1.5227" y1="-3.4925" x2="3.4925" y2="-1.5227" width="0.1524" layer="21" curve="42.886424"/>
+<wire x1="4.191" y1="0.889" x2="4.191" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="3.705" y1="-0.889" x2="4.191" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="3.705" y1="0.889" x2="4.191" y2="0.889" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-3.556" y="0" drill="1.3208"/>
+<pad name="3" x="3.556" y="0" drill="1.3208"/>
+<pad name="2" x="0" y="-3.556" drill="1.3208"/>
+<text x="-4.445" y="-3.937" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="6.223" y="-4.318" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.254" x2="1.27" y2="0.254" layer="21"/>
+<hole x="0" y="0" drill="3.302"/>
+</package>
+<package name="CTRIM808-BC7.5">
+<description>&lt;b&gt;Trimm capacitor &lt;/b&gt; BC-Components</description>
+<wire x1="1.3" y1="5.05" x2="3.35" y2="-1.6" width="0.254" layer="21" curve="-110.073805"/>
+<wire x1="-3.35" y1="-1.6" x2="-1.3" y2="5.05" width="0.254" layer="21" curve="-110.073805"/>
+<wire x1="-1.45" y1="-3" x2="1.45" y2="-3" width="0.254" layer="21" curve="39.851161"/>
+<circle x="0" y="1" radius="4.25" width="0.254" layer="51"/>
+<circle x="0" y="1" radius="1.271" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="-2.54" drill="1.3"/>
+<pad name="2" x="0" y="5.08" drill="1.3"/>
+<pad name="3" x="2.54" y="-2.54" drill="1.3"/>
+<text x="-4.4684" y="-3.4056" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.77" y="-3.4056" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.2192" y1="0.6952" x2="1.2192" y2="1.3048" layer="21"/>
+<hole x="0" y="1" drill="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -1809,6 +2218,22 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="C-TRIMM">
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-3.048" x2="-2.286" y2="0.762" width="0.3048" layer="94"/>
+<wire x1="-3.048" y1="0" x2="-2.286" y2="0.762" width="0.3048" layer="94"/>
+<wire x1="-2.286" y1="0.762" x2="-1.524" y2="1.524" width="0.3048" layer="94"/>
+<wire x1="-3.048" y1="-3.302" x2="-3.048" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="-1.016" x2="-3.302" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="-1.016" x2="-2.794" y2="-1.778" width="0.1524" layer="94"/>
+<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.286" y="-5.207" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
+<pin name="E" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="A" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2524,6 +2949,185 @@ Source: AVX .. aphvc.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C-TRIMM" prefix="C" uservalue="yes">
+<description>&lt;b&gt;Trimm capacitor&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="C-TRIMM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3008" package="CTRIM3008">
+<connects>
+<connect gate="G$1" pin="A" pad="-"/>
+<connect gate="G$1" pin="E" pad="+"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3018_11" package="CTRIM3018_11">
+<connects>
+<connect gate="G$1" pin="A" pad="-"/>
+<connect gate="G$1" pin="E" pad="+"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3018_12" package="CTRIM3018_12">
+<connects>
+<connect gate="G$1" pin="A" pad="-"/>
+<connect gate="G$1" pin="E" pad="+"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3040.427" package="CTRIM3040.427">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3040.428" package="CTRIM3040.428">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3040.448" package="CTRIM3040.448">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3040.450" package="CTRIM3040.450">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3040.452" package="CTRIM3040.452">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3050.504" package="CTRIM3050.504">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3050.505" package="CTRIM3050.505">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3050.506" package="CTRIM3050.506">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CTZ2" package="CTRIMCTZ2">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CTZ3" package="CTRIMCTZ3">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TZBX4" package="CTRIMTZBX4">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CV05" package="CTRIMCV05">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TZ03" package="CTRIMTZ03">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="808" package="CTRIM808-BC">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="808-1" package="CTRIM808-1">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="808-7.5" package="CTRIM808-BC7.5">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9747,6 +10351,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X5" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="CA-TUNE" library="rcl" deviceset="C-TRIMM" device="TZBX4"/>
 </parts>
 <sheets>
 <sheet>
@@ -9813,19 +10418,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="IC1" gate="B" x="-185.42" y="59.69"/>
 <instance part="RN2" gate="A" x="-233.68" y="74.93" rot="R180"/>
 <instance part="RN2" gate="B" x="-191.77" y="74.93" rot="R180"/>
-<instance part="RN2" gate="C" x="-207.01" y="86.36" rot="R90"/>
-<instance part="RN2" gate="D" x="-201.93" y="86.36" rot="R90"/>
 <instance part="GND11" gate="1" x="-295.91" y="46.99"/>
 <instance part="CA" gate="G$1" x="-314.96" y="116.84" rot="R270"/>
 <instance part="RVA" gate="G$1" x="-214.63" y="45.72" rot="R90"/>
 <instance part="RVB" gate="G$1" x="-200.66" y="45.72" rot="R90"/>
-<instance part="GND6" gate="1" x="-314.96" y="106.68"/>
+<instance part="GND6" gate="1" x="-325.12" y="106.68"/>
 <instance part="CB" gate="G$1" x="-170.18" y="116.84" rot="R270"/>
 <instance part="GND7" gate="1" x="-170.18" y="100.33"/>
 <instance part="GND8" gate="1" x="-223.52" y="30.48" rot="MR0"/>
 <instance part="GND13" gate="1" x="-195.58" y="30.48" rot="MR0"/>
 <instance part="JP2" gate="A" x="-307.34" y="54.61" rot="R180"/>
 <instance part="JP5" gate="A" x="-157.48" y="54.61" rot="R180"/>
+<instance part="CA-TUNE" gate="G$1" x="-314.96" y="129.54" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -9897,10 +10501,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="IC1" gate="A" pin="V+"/>
 </segment>
 <segment>
-<pinref part="CA" gate="G$1" pin="1"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="CB" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-170.18" y1="102.87" x2="-170.18" y2="109.22" width="0.1524" layer="91"/>
@@ -9926,6 +10526,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="JP2" gate="A" pin="1"/>
 <wire x1="-304.8" y1="49.53" x2="-295.91" y2="49.53" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CA" gate="G$1" pin="1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="-325.12" y1="109.22" x2="-322.58" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="CA-TUNE" gate="G$1" pin="E"/>
+<wire x1="-322.58" y1="109.22" x2="-314.96" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-317.5" y1="129.54" x2="-322.58" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-322.58" y1="129.54" x2="-322.58" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-322.58" y="109.22"/>
 </segment>
 </net>
 <net name="VBUS" class="1">
@@ -10055,9 +10665,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-287.02" y1="109.22" x2="-287.02" y2="105.41" width="0.1524" layer="91"/>
 <wire x1="-265.43" y1="118.11" x2="-265.43" y2="111.76" width="0.1524" layer="91"/>
 <junction x="-265.43" y="111.76"/>
-<wire x1="-287.02" y1="109.22" x2="-312.42" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-287.02" y1="109.22" x2="-304.8" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-287.02" y="109.22"/>
 <pinref part="CA" gate="G$1" pin="2"/>
+<wire x1="-304.8" y1="109.22" x2="-312.42" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-304.8" y1="109.22" x2="-304.8" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="CA-TUNE" gate="G$1" pin="A"/>
+<wire x1="-304.8" y1="129.54" x2="-309.88" y2="129.54" width="0.1524" layer="91"/>
+<junction x="-304.8" y="109.22"/>
 </segment>
 </net>
 <net name="N$14" class="0">
