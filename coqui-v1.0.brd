@@ -172,7 +172,7 @@
 <wire x1="51.562" y1="39.878" x2="51.689" y2="3.556" width="0" layer="20"/>
 <text x="13.462" y="24.765" size="1.27" layer="21">O</text>
 <text x="41.529" y="25.146" size="1.27" layer="21">O</text>
-<text x="26.797" y="9.017" size="1.4224" layer="22" rot="MR90">http://publiclab.org/wiki/coqui</text>
+<text x="26.035" y="7.493" size="1.4224" layer="22" rot="MR90">http://publiclab.org/wiki/coqui</text>
 <text x="27.94" y="2.286" size="1.778" layer="21" rot="R180">COQUI</text>
 <text x="32.512" y="1.905" size="1.27" layer="21" rot="R180">v1.0</text>
 <wire x1="12.954" y1="34.417" x2="13.843" y2="34.417" width="0.254" layer="21"/>
