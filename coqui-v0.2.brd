@@ -18,7 +18,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -135,6 +135,11 @@
 <wire x1="0" y1="18" x2="75.7868" y2="18" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="75.7868" y2="0" width="0" layer="20"/>
 <wire x1="75.7868" y1="0" x2="75.7868" y2="18" width="0" layer="20"/>
+<wire x1="20.4" y1="13.6" x2="19.6" y2="13.6" width="0.06" layer="21" curve="-180"/>
+<text x="23.4" y="7.1" size="0.4064" layer="21" rot="R90">ON</text>
+<text x="30.5" y="6.6" size="0.4064" layer="21" rot="R90">OFF</text>
+<text x="64.8" y="1.2" size="0.8128" layer="21" rot="R180">Coqui 0.2</text>
+<text x="74.4" y="13" size="0.6096" layer="21" rot="R270">publiclab.org/wiki/coqui</text>
 </plain>
 <libraries>
 <library name="SparkFunNew">
@@ -890,75 +895,139 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="BATT" library="adafruit" package="JST-PH-2-SMT-RA" value="" x="18.208" y="3.79" rot="R180"/>
-<element name="IC3" library="SparkFunNew" package="SOT23-5" value="MCP73831" x="20.022" y="12.22" rot="R270"/>
-<element name="IC4" library="adafruit" package="SOT89" value="MCP1700-33" x="6.874" y="11.57" rot="R90"/>
-<element name="ICB" library="adafruit" package="SO08" value="LM555D" x="33.624" y="4.774" rot="R180"/>
-<element name="J1" library="SparkFunNew" package="AYZ0202" value="AYZ0202" x="26.848" y="4.1"/>
-<element name="JP2" library="SparkFun-Connectors" package="AUDIO-JACK-TRRS-SMD" value="AUDIO-JACK3" x="45.984" y="2.054" rot="R90"/>
-<element name="CHG2" library="led" package="CHIPLED_0805" value="0805" x="17.044" y="12.236"/>
-<element name="ICB1" library="adafruit" package="SO08" value="LM555D" x="26.514" y="11.074" rot="R90"/>
-<element name="SV7" library="con-lstb" package="MA04-1" value="" x="70.7622" y="16.002" rot="R180">
+<element name="BATT" library="adafruit" package="JST-PH-2-SMT-RA" value="" x="18.208" y="3.79" smashed="yes" rot="R180">
+<attribute name="VALUE" x="20.748" y="11.41" size="1.27" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="IC3" library="SparkFunNew" package="SOT23-5" value="MCP73831" x="20.022" y="12.22" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.591" y="11.681" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="19.8315" y="13.1725" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="IC4" library="adafruit" package="SOT89" value="MCP1700-33" x="6.874" y="11.57" smashed="yes" rot="R90"/>
+<element name="555A" library="adafruit" package="SO08" value="LM555D" x="33.624" y="4.774" smashed="yes" rot="R180">
+<attribute name="VALUE" x="29.687" y="6.806" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="31.421" y="3.045" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="J1" library="SparkFunNew" package="AYZ0202" value="AYZ0202" x="26.848" y="4.1" smashed="yes">
+<attribute name="VALUE" x="27.356" y="5.243" size="0.4064" layer="27"/>
+</element>
+<element name="JP2" library="SparkFun-Connectors" package="AUDIO-JACK-TRRS-SMD" value="AUDIO-JACK3" x="45.984" y="2.054" smashed="yes" rot="R90"/>
+<element name="CHG" library="led" package="CHIPLED_0805" value="0805" x="17.044" y="12.236" smashed="yes">
+<attribute name="NAME" x="17.634" y="14.474" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="19.584" y="10.966" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="555B" library="adafruit" package="SO08" value="LM555D" x="26.514" y="11.074" smashed="yes" rot="R90">
+<attribute name="VALUE" x="28.546" y="15.011" size="1.27" layer="27" ratio="10" rot="R180"/>
+<attribute name="NAME" x="27.047" y="13.519" size="1.27" layer="25" ratio="10" rot="R270"/>
+</element>
+<element name="SV7" library="con-lstb" package="MA04-1" value="" x="70.7622" y="16.002" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="70.7622" y="16.002" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="70.7622" y="16.002" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="70.7622" y="16.002" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="70.7622" y="16.002" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="70.1272" y="14.351" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="U$4" library="Testing" package="USB-AB-MICRO-SMD_V02_BOSS" value="" x="8.8" y="2.7" rot="R90"/>
-<element name="JP1" library="trrs-dwb" package="1X04/90" value="" x="36.7" y="4.3" rot="R90"/>
-<element name="IN1" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="69.1" y="10.8" rot="R90"/>
-<element name="IN2" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="69.1" y="3.5" rot="R90"/>
+<element name="U$4" library="Testing" package="USB-AB-MICRO-SMD_V02_BOSS" value="" x="8.8" y="2.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="2.831" y="1.43" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="3.339" y="1.43" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="JP1" library="trrs-dwb" package="1X04/90" value="" x="36.7" y="4.3" smashed="yes" rot="R90">
+<attribute name="VALUE" x="40.129" y="9.761" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="IN1" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="69.1" y="10.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.4" y="13.3" size="0.8128" layer="25" rot="R270"/>
+</element>
+<element name="IN2" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="69.1" y="3.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.3" y="4.8" size="0.8128" layer="25" rot="R270"/>
+</element>
 <element name="SV6" library="con-lstb" package="MA06-1" value="" x="19.6" y="16" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="19.6" y="16" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="19.6" y="16" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="19.6" y="16" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="19.6" y="16" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="27.22" y="14.349" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="22.14" y="18.921" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="SV8" library="con-lstb" package="MA06-1" value="" x="47.7" y="16">
+<element name="SV8" library="con-lstb" package="MA06-1" value="" x="47.7" y="16" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="47.7" y="16" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="47.7" y="16" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="47.7" y="16" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="47.7" y="16" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="45.16" y="13.079" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="L1" library="adafruit" package="R1206" value="500mA" x="10.8" y="11.3" rot="R90"/>
-<element name="D3" library="adafruit" package="SOD-123FL" value="SCHOTTKY" x="13.2" y="11.7" rot="R270"/>
-<element name="R1" library="microbuilder" package="0603-NO" value="10k" x="15.3" y="12.3" rot="R90"/>
-<element name="C2" library="SparkFun" package="0603-CAP" value="0.1uF" x="33.2" y="12.7"/>
-<element name="R2" library="microbuilder" package="0603-NO" value="22k" x="33.2" y="10.2" rot="R180"/>
-<element name="C1" library="SparkFun" package="0603-CAP" value="0.1uF" x="37.2" y="12.1" rot="R270"/>
+<element name="L1" library="adafruit" package="R1206" value="500mA" x="10.8" y="11.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="10.997" y="14.457" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="13.213" y="9.903" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="D3" library="adafruit" package="SOD-123FL" value="SCHOTTKY" x="13.2" y="11.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="12.9" y="8.8" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="11.916" y="12.8" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="R1" library="microbuilder" package="0603-NO" value="10k" x="15.3" y="12.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.622" y="10.527" size="0.4064" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="VALUE" x="16.062" y="14.078" size="0.4064" layer="27" font="vector" ratio="10" rot="R90"/>
+</element>
+<element name="C2" library="SparkFun" package="0603-CAP" value="0.1uF" x="33.2" y="12.7" smashed="yes">
+<attribute name="NAME" x="35.338" y="12.411" size="0.4064" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="32.184" y="11.557" size="0.4064" layer="27" font="vector"/>
+</element>
+<element name="R2" library="microbuilder" package="0603-NO" value="22k" x="33.2" y="10.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="34.873" y="10.722" size="0.4064" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="31.422" y="10.962" size="0.4064" layer="27" font="vector" ratio="10" rot="R180"/>
+</element>
+<element name="C1" library="SparkFun" package="0603-CAP" value="0.1uF" x="37.2" y="12.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="38.738" y="11.711" size="0.4064" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="36.057" y="13.116" size="0.4064" layer="27" font="vector" rot="R270"/>
+</element>
 <element name="CON1" library="pinhead" package="1X02" value="" x="6.9" y="16" smashed="yes" rot="R180">
-<attribute name="NAME" x="9.5162" y="14.1712" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="9.44" y="19.175" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="CON3" library="pinhead" package="1X02" value="" x="34.9" y="16" rot="R180"/>
-<element name="CON2" library="pinhead" package="1X02" value="" x="57.9" y="16"/>
+<element name="CON3" library="pinhead" package="1X02" value="" x="34.9" y="16" smashed="yes" rot="R180">
+<attribute name="VALUE" x="37.44" y="19.175" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="CON2" library="pinhead" package="1X02" value="" x="57.9" y="16" smashed="yes">
+<attribute name="VALUE" x="55.36" y="12.825" size="1.27" layer="27"/>
+</element>
 <element name="CON4" library="pinhead" package="1X02" value="" x="29.8" y="16" smashed="yes">
-<attribute name="NAME" x="27.1838" y="17.8288" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="27.26" y="12.825" size="1.27" layer="27"/>
 </element>
-<element name="SV1" library="con-lstb" package="MA07-1" value="" x="2.3" y="9" rot="R90">
+<element name="SV1" library="con-lstb" package="MA07-1" value="" x="2.3" y="9" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="2.3" y="9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="2.3" y="9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="2.3" y="9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="2.3" y="9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="5.221" y="6.46" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="JP3" library="pinhead" package="1X01" value="" x="38.7" y="16"/>
-<element name="THRM" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="53.9" y="3.6" rot="R90"/>
-<element name="RTHERM" library="microbuilder" package="0603-NO" value="10k" x="63.9" y="9.2" rot="R270"/>
-<element name="CON5" library="pinhead" package="1X02" value="" x="63" y="16"/>
-<element name="C3" library="SparkFun" package="0603-CAP" value="0.1uF" x="57.6" y="9.2"/>
-<element name="TM1" library="adafruit" package="TC33X" value="" x="53.5" y="10.4" rot="R180"/>
-<element name="JP4" library="pinhead" package="1X01" value="" x="10.7" y="16"/>
+<element name="JP3" library="pinhead" package="1X01" value="" x="38.7" y="16" smashed="yes">
+<attribute name="VALUE" x="37.43" y="12.825" size="1.27" layer="27"/>
+</element>
+<element name="THRM" library="adafruit" package="1X2-3.5MM" value="1X2-3.5MM" x="53.9" y="3.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.2" y="4.9" size="0.8128" layer="25" rot="R270"/>
+</element>
+<element name="RTHERM" library="microbuilder" package="0603-NO" value="10k" x="63.9" y="9.2" smashed="yes" rot="R270">
+<attribute name="NAME" x="61.873" y="10.822" size="0.8128" layer="25" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="63.138" y="7.422" size="0.4064" layer="27" font="vector" ratio="10" rot="R270"/>
+</element>
+<element name="CON5" library="pinhead" package="1X02" value="" x="63" y="16" smashed="yes">
+<attribute name="VALUE" x="60.46" y="12.825" size="1.27" layer="27"/>
+</element>
+<element name="C3" library="SparkFun" package="0603-CAP" value="0.1uF" x="57.6" y="9.2" smashed="yes">
+<attribute name="NAME" x="59.738" y="8.911" size="0.4064" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="56.584" y="8.057" size="0.4064" layer="27" font="vector"/>
+</element>
+<element name="TM1" library="adafruit" package="TC33X" value="" x="53.5" y="10.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="52.995" y="13.205" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="50.325" y="12.305" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP4" library="pinhead" package="1X01" value="" x="10.7" y="16" smashed="yes">
+<attribute name="VALUE" x="9.43" y="12.825" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="BATT" pad="2"/>
 <contactref element="IC3" pad="2"/>
 <contactref element="IC4" pad="1"/>
-<contactref element="ICB" pad="1"/>
-<contactref element="ICB1" pad="1"/>
+<contactref element="555A" pad="1"/>
+<contactref element="555B" pad="1"/>
 <contactref element="U$4" pad="GND1"/>
 <contactref element="SV8" pad="3"/>
 <contactref element="SV6" pad="3"/>
@@ -1202,7 +1271,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="40.767" y="11.5824" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="AOUT">
-<contactref element="ICB" pad="3"/>
+<contactref element="555A" pad="3"/>
 <contactref element="SV8" pad="2"/>
 <contactref element="SV8" pad="6"/>
 <wire x1="32.9946" y1="8.3058" x2="32.9946" y2="7.8486" width="0.1524" layer="1"/>
@@ -1228,8 +1297,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="48.387" y="12.192" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="N$11">
-<contactref element="ICB" pad="6"/>
-<contactref element="ICB" pad="2"/>
+<contactref element="555A" pad="6"/>
+<contactref element="555A" pad="2"/>
 <contactref element="SV8" pad="4"/>
 <contactref element="SV8" pad="5"/>
 <wire x1="51.435" y1="16.002" x2="48.9966" y2="16.002" width="0.1524" layer="1"/>
@@ -1258,7 +1327,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="48.9204" y1="15.9258" x2="48.97" y2="16" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$14">
-<contactref element="ICB" pad="5"/>
+<contactref element="555A" pad="5"/>
 <contactref element="C2" pad="2"/>
 <wire x1="33.9852" y1="11.5824" x2="33.9852" y2="12.6492" width="0.1524" layer="1"/>
 <wire x1="33.147" y1="10.7442" x2="33.9852" y2="11.5824" width="0.1524" layer="1"/>
@@ -1273,8 +1342,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="31.6992" y1="1.7526" x2="31.719" y2="1.7006" width="0.1524" layer="1"/>
 </signal>
 <signal name="VAIN">
-<contactref element="ICB" pad="8"/>
-<contactref element="ICB" pad="4"/>
+<contactref element="555A" pad="8"/>
+<contactref element="555A" pad="4"/>
 <contactref element="SV8" pad="1"/>
 <wire x1="31.7754" y1="7.3914" x2="31.7754" y2="7.7724" width="0.1524" layer="1"/>
 <wire x1="32.766" y1="6.4008" x2="31.7754" y2="7.3914" width="0.1524" layer="1"/>
@@ -1294,7 +1363,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="35.5854" y="4.8768" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="N$5">
-<contactref element="CHG2" pad="C"/>
+<contactref element="CHG" pad="C"/>
 <contactref element="IC3" pad="1"/>
 <wire x1="17.145" y1="13.1826" x2="18.669" y2="13.1826" width="0.1524" layer="1"/>
 <wire x1="17.0688" y1="13.2588" x2="17.145" y2="13.1826" width="0.1524" layer="1"/>
@@ -1302,7 +1371,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.0688" y1="13.2588" x2="17.044" y2="13.286" width="0.1524" layer="1"/>
 </signal>
 <signal name="AOUT1">
-<contactref element="ICB1" pad="3"/>
+<contactref element="555B" pad="3"/>
 <contactref element="SV6" pad="2"/>
 <contactref element="SV6" pad="6"/>
 <wire x1="30.0228" y1="11.7348" x2="29.6418" y2="11.7348" width="0.1524" layer="1"/>
@@ -1326,8 +1395,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="24.9936" y="11.8872" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="N$1">
-<contactref element="ICB1" pad="6"/>
-<contactref element="ICB1" pad="2"/>
+<contactref element="555B" pad="6"/>
+<contactref element="555B" pad="2"/>
 <contactref element="SV6" pad="4"/>
 <contactref element="SV6" pad="5"/>
 <wire x1="23.9268" y1="11.7348" x2="23.4696" y2="11.7348" width="0.1524" layer="1"/>
@@ -1362,8 +1431,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="18.288" y1="16.002" x2="18.33" y2="16" width="0.1524" layer="1"/>
 </signal>
 <signal name="VAIN1">
-<contactref element="ICB1" pad="8"/>
-<contactref element="ICB1" pad="4"/>
+<contactref element="555B" pad="8"/>
+<contactref element="555B" pad="4"/>
 <contactref element="SV6" pad="1"/>
 <wire x1="24.384" y1="9.2202" x2="23.4696" y2="9.2202" width="0.1524" layer="1"/>
 <wire x1="28.1178" y1="12.954" x2="27.0891" y2="11.9253" width="0.1524" layer="1"/>
@@ -1378,7 +1447,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.908" y1="15.9258" x2="25.95" y2="16" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="ICB1" pad="5"/>
+<contactref element="555B" pad="5"/>
 <contactref element="C1" pad="2"/>
 <wire x1="37.1856" y1="9.0678" x2="37.1856" y2="11.2014" width="0.1524" layer="1"/>
 <wire x1="36.4236" y1="8.3058" x2="37.1856" y2="9.0678" width="0.1524" layer="1"/>
@@ -1498,7 +1567,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="48.6918" y="10.5918" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="N$4">
-<contactref element="CHG2" pad="A"/>
+<contactref element="CHG" pad="A"/>
 <contactref element="R1" pad="1"/>
 <wire x1="16.764" y1="11.43" x2="15.3162" y2="11.43" width="0.1524" layer="1"/>
 <wire x1="16.9926" y1="11.2014" x2="16.764" y2="11.43" width="0.1524" layer="1"/>
