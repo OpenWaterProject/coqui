@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -4363,7 +4363,7 @@ W = angled&lt;p&gt;
 <instance part="SV1" gate="1" x="-56.642" y="145.542" rot="R270"/>
 <instance part="GND3" gate="1" x="-49.022" y="132.08"/>
 <instance part="P+6" gate="VCC" x="31.75" y="34.544"/>
-<instance part="P+1" gate="VCC" x="-72.644" y="140.462"/>
+<instance part="P+1" gate="VCC" x="-39.624" y="140.462"/>
 <instance part="P+2" gate="VCC" x="-96.774" y="116.078"/>
 <instance part="P+3" gate="VCC" x="-29.972" y="115.824"/>
 <instance part="JP3" gate="G$1" x="-86.614" y="112.522" rot="R90"/>
@@ -4522,11 +4522,6 @@ W = angled&lt;p&gt;
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="1"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="-72.644" y1="137.922" x2="-64.262" y2="137.922" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="CON1" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="-96.774" y1="113.538" x2="-96.774" y2="110.236" width="0.1524" layer="91"/>
@@ -4540,6 +4535,11 @@ W = angled&lt;p&gt;
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <wire x1="9.652" y1="157.48" x2="17.272" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="RTHERM" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="1" pin="6"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="-51.562" y1="137.922" x2="-39.624" y2="137.922" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AOUT" class="0">
@@ -4775,10 +4775,10 @@ W = angled&lt;p&gt;
 <label x="-5.588" y="152.4" size="1.778" layer="95" rot="R270"/>
 <junction x="-5.588" y="157.48"/>
 <wire x1="-5.588" y1="157.48" x2="-5.588" y2="135.89" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="6"/>
-<wire x1="-5.588" y1="135.89" x2="-51.562" y2="135.89" width="0.1524" layer="91"/>
-<wire x1="-51.562" y1="135.89" x2="-51.562" y2="137.922" width="0.1524" layer="91"/>
+<wire x1="-5.588" y1="135.89" x2="-64.262" y2="135.89" width="0.1524" layer="91"/>
 <pinref part="RTHERM" gate="G$1" pin="2"/>
+<pinref part="SV1" gate="1" pin="1"/>
+<wire x1="-64.262" y1="135.89" x2="-64.262" y2="137.922" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
